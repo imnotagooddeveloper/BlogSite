@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="hbt2.css">
+</head>
+<body>
+    <img src="../images/youlooklikethis.png" >
+    <h1><strong>How a Man-in-the-Middle (MitM) Attack Works</strong></h1>
+    <p>A <strong>Man-in-the-Middle (MitM) attack</strong> is a cybersecurity threat where an attacker secretly intercepts, alters, or relays communication between two parties without their knowledge. This attack can be used to steal sensitive information, inject malicious payloads, or manipulate data exchanges.</p>
+    
+    <p><strong>Network-Based MitM Attacks</strong></p>
+    <p>The most common form of MitM attack occurs on unsecured networks, particularly public Wi-Fi. Attackers can position themselves between a user and a legitimate service using techniques such as:</p>
+    <ul>
+      <li><strong>ARP Spoofing:</strong> Since devices on a local network use the Address Resolution Protocol (ARP) to associate MAC addresses with IP addresses, an attacker can send fake ARP responses, tricking victims into thinking the attacker's device is the router. As a result, all traffic is routed through the attacker's machine before reaching the intended destination.</li>
+      <li><strong>DNS Spoofing:</strong> Instead of targeting ARP tables, an attacker can poison the DNS cache, redirecting a user to a fraudulent website that mimics a legitimate one. This is commonly used for phishing attacks.</li>
+      <li><strong>SSL Stripping:</strong  > Websites use HTTPS for encryption, but an attacker can act as a proxy, downgrading HTTPS connections to HTTP. This allows them to intercept data in plaintext before re-encrypting and forwarding it to the intended destination.</li>
+    </ul>
+
+    <img src="../images/yeypoker.png">
+
+    <p><strong>Session Hijacking and Credential Theft</strong></p>
+    <p>Once an attacker is in the middle of a connection, they can capture authentication tokens, cookies, and session data. This allows them to impersonate users without needing their passwords. For example, after logging into a banking website, your session token is stored in your browser. If an attacker intercepts this token, they can use it to gain access to your account without needing your credentials.</p>
+    
+    <p><strong>MitM in Encrypted Communications</strong></p>
+    <p>To counteract encryption, attackers may use techniques such as:</p>
+    <ul>
+      <li><strong>Fake Certificates:</strong> If a user connects to an HTTPS website, the attacker can present a fraudulent SSL certificate. If the user ignores browser warnings, the attacker can decrypt and inspect traffic.</li>
+      <li><strong>Downgrade Attacks:</strong> Instead of breaking encryption directly, attackers force a connection to use weaker cryptographic standards that are easier to compromise.</li>
+    </ul>
+    
+    <p><strong>How to Protect Against MitM Attacks</strong></p>
+    <ul>
+      <li><strong>Always use HTTPS:</strong> Ensure that websites use proper encryption. Tools like HTTPS Everywhere can enforce secure connections.</li>
+      <li><strong>Avoid Public Wi-Fi:</strong> If you must use an open network, consider using a VPN to encrypt your traffic.</li>
+      <li><strong>Enable Multi-Factor Authentication (MFA):</strong> Even if an attacker intercepts your credentials, MFA adds an extra layer of security.</li>
+      <li><strong>Verify SSL Certificates:</strong> Never ignore browser warnings about insecure certificates.</li>
+      <li><strong>Use Secure DNS and Encrypted DNS (DoH/DoT):</strong> These protocols protect against DNS spoofing.</li>
+    </ul>
+    
+    <p>MitM attacks are a major threat to both personal security and corporate networks. Understanding these techniques and implementing best practices is crucial to mitigating risks and maintaining secure communication channels.</p>
+    </body>
+</html>

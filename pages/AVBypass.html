@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="hbt2.css">
+</head>
+<body>
+    <img src="images/cutecat.png" >
+    <h1><strong>How AV Bypass Works (In a Basic Way)</strong></h1>
+    <p>Antivirus (AV) software is designed to detect and neutralize malicious code before it can execute and cause harm. It relies on a combination of signature-based detection, heuristic analysis, and behavioral monitoring. However, attackers have developed numerous techniques to evade AV detection, effectively bypassing these security measures.</p>
+    <img src="images/template_69_lol.png">
+    <p><strong>Signature-Based Evasion</strong></p>
+    <p>Most traditional AV software relies on a database of known malware signatures—unique sequences of bytes that identify specific threats. To bypass this, attackers use <strong>polymorphic and metamorphic malware</strong>. Polymorphic malware encrypts or obfuscates its code and changes its appearance with each infection, ensuring that no two versions look exactly the same. Metamorphic malware goes a step further by rewriting its entire code structure while maintaining functionality, making static signature detection ineffective.</p>
+    <img src="images/template_69_lol.png">
+    <p><strong>Obfuscation Techniques</strong></p>
+    <p>Another common method is <strong>code obfuscation</strong>, which involves altering the code’s structure without changing its execution. Attackers use packers, crypters, and other encoding mechanisms to transform their malware into unreadable formats. Tools like UPX or custom encryption routines compress or encrypt the payload, ensuring that AV software cannot analyze its contents until it is unpacked during execution—by which time, it may already be too late.</p>
+    <img src="images/template_69_lol.png">
+    <p><strong>Behavioral Evasion</strong></p>
+    <p>Modern AV solutions employ heuristic and behavioral analysis, which means they watch for suspicious actions rather than specific code patterns. To evade this, malware often implements <strong>delayed execution</strong> or <strong>sandbox detection</strong>. Delayed execution ensures the malware doesn’t immediately perform any harmful actions, making it appear benign during initial scans. Sandbox detection involves checking for signs of a virtualized analysis environment, such as running processes, CPU instructions, or unusual registry entries. If the malware detects a sandbox, it will remain dormant to avoid triggering alerts.</p>
+    <img src="images/template_69_lol.png">
+    <p><strong>Process Injection and Living-Off-the-Land Techniques</strong></p>
+    <p>Many AV solutions monitor newly spawned processes, so instead of creating an obvious malicious process, malware often injects itself into legitimate ones. Techniques like <strong>DLL injection</strong>, <strong>Process Hollowing</strong>, and <strong>Reflective DLL Loading</strong> allow malware to execute within trusted applications, bypassing security policies. Similarly, <strong>Living-off-the-Land Binaries (LOLBins)</strong> involve using legitimate system tools (e.g., PowerShell, rundll32.exe) to execute malicious payloads, making detection more difficult.</p>
+    <img src="images/template_69_lol.png">
+    <p><strong>Kernel-Level Attacks</strong></p>
+    <p>While most AV solutions operate at the user level, some advanced malware attempts to run in kernel mode, where it has greater privileges and can disable security software directly. Rootkits are an example of this, allowing persistent access while remaining hidden from detection.</p>
+    <p>Ultimately, AV bypassing is a constant arms race between malware developers and security researchers. While AV software evolves with more sophisticated detection methods, attackers continuously adapt, finding new ways to evade detection and maintain persistence.</p>
+    <img src="images/template_69_lol.png">
+</body>
+</html>
